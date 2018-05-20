@@ -1,0 +1,4 @@
+languageCode = "en-us"
+title = "Sebastin Santy: GSoC Blog [julia]"
+baseurl = "http://sebastinsanty.github.io/gsoc2018-blog"
+theme = "after-dark"
