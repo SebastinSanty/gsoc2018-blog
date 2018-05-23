@@ -1,9 +1,9 @@
-+++
-date = "2018-05-21T02:15:59+05:30"
-title = "Accepted to GSoC 2018"
-draft = false
-
-+++
+---
+title: "Accepted to GSoC 2018"
+date: 2018-05-21T02:15:59+05:30
+# thumbnail: "path/thumbnail.jpg"
+draft: false
+---
 
 Hi everyone!
 
