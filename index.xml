@@ -6,9 +6,20 @@
     <description>Recent content on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 21 May 2018 02:15:59 +0530</lastBuildDate>
     
 	<atom:link href="http://gsoc2018.sebastinsanty.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Accepted to GSoC 2018</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/gsoc-intro/</link>
+      <pubDate>Mon, 21 May 2018 02:15:59 +0530</pubDate>
+      
+      <guid>http://gsoc2018.sebastinsanty.com/posts/gsoc-intro/</guid>
+      <description>Hi everyone!
+I am Sebastin Santy, a third year undergrad at BITS Pilani K.K. Birla Goa Campus. My proposal for GSoC 2018 has been accepted under NumFOCUS [Julia Computing]. I&amp;rsquo;ll be working on adding support for more data repositories to DataDepsGenerators.jl. DataDepsGenerators.jl is a support package for DataDeps.jl which helps in creating Register Blocks for DataDeps.jl. A Register Block is a chunk of julia code which describes the data to be downloaded.</description>
+    </item>
     
   </channel>
 </rss>
