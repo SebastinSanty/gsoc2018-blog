@@ -2,21 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sebastin Santy: GSoC Blog [julia]</title>
-    <link>http://sebastinsanty.github.io/gsoc2018-blog/posts/index.xml</link>
+    <link>http://gsoc2018.sebastinsanty.com/posts/</link>
     <description>Recent content in Posts on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 02:15:59 +0530</lastBuildDate>
-    <atom:link href="http://sebastinsanty.github.io/gsoc2018-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://gsoc2018.sebastinsanty.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>gsoc intro</title>
-      <link>http://sebastinsanty.github.io/gsoc2018-blog/posts/gsoc-intro/</link>
+      <title>Accepted to GSoC 2018</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/gsoc-intro/</link>
       <pubDate>Mon, 21 May 2018 02:15:59 +0530</pubDate>
       
-      <guid>http://sebastinsanty.github.io/gsoc2018-blog/posts/gsoc-intro/</guid>
-      <description>&lt;p&gt;Hello&lt;/p&gt;
-</description>
+      <guid>http://gsoc2018.sebastinsanty.com/posts/gsoc-intro/</guid>
+      <description>Hi everyone!
+I am Sebastin Santy, a third year undergrad at BITS Pilani K.K. Birla Goa Campus. My proposal for GSoC 2018 has been accepted under NumFOCUS [Julia Computing]. I&amp;rsquo;ll be working on adding support for more data repositories to DataDepsGenerators.jl. DataDepsGenerators.jl is a support package for DataDeps.jl which helps in creating Register Blocks for DataDeps.jl. A Register Block is a chunk of julia code which describes the data to be downloaded.</description>
     </item>
     
   </channel>
