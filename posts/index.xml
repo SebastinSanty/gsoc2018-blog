@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 May 2018 02:15:59 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 24 May 2018 03:56:04 +0530</lastBuildDate>
     
 	<atom:link href="http://gsoc2018.sebastinsanty.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 1: Making DataDepsGenerators.jl ready</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/week1/</link>
+      <pubDate>Thu, 24 May 2018 03:56:04 +0530</pubDate>
+      
+      <guid>http://gsoc2018.sebastinsanty.com/posts/week1/</guid>
+      <description>Hi everyone!
+The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
+Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators.</description>
+    </item>
     
     <item>
       <title>Accepted to GSoC 2018</title>
