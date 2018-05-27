@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 May 2018 03:56:04 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 27 May 2018 01:18:33 +0530</lastBuildDate>
     
 	<atom:link href="http://gsoc2018.sebastinsanty.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 2: Work on the REST API interface using DataOne</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/week2/</link>
+      <pubDate>Sun, 27 May 2018 01:18:33 +0530</pubDate>
+      
+      <guid>http://gsoc2018.sebastinsanty.com/posts/week2/</guid>
+      <description>Hi everyone!
+The second week has come to an end. This is the summary of what I have done over the previous week:
+Work PR #18: Provision to add checksum in Register Blocks. Till now checksums didn&amp;rsquo;t have a separate block of space in the Register Block structure. A new function was created to handle the case of checksums along with the tests. Overall, this PR helped me a lot in learning Julia, thanks to the lengthy review it went through.</description>
+    </item>
     
     <item>
       <title>Week 1: Making DataDepsGenerators.jl ready</title>
