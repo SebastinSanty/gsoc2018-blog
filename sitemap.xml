@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://gsoc2018.sebastinsanty.com/posts/week3/</loc>
+    <lastmod>2018-06-03T01:18:33+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://gsoc2018.sebastinsanty.com/posts/week2/</loc>
     <lastmod>2018-05-27T01:18:33+05:30</lastmod>
   </url>
@@ -24,13 +29,13 @@
   
   <url>
     <loc>http://gsoc2018.sebastinsanty.com/posts/</loc>
-    <lastmod>2018-05-27T01:18:33+05:30</lastmod>
+    <lastmod>2018-06-03T01:18:33+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://gsoc2018.sebastinsanty.com/</loc>
-    <lastmod>2018-05-27T01:18:33+05:30</lastmod>
+    <lastmod>2018-06-03T01:18:33+05:30</lastmod>
     <priority>0</priority>
   </url>
   

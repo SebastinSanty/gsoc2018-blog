@@ -6,10 +6,21 @@
     <description>Recent content on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 May 2018 01:18:33 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jun 2018 01:18:33 +0530</lastBuildDate>
     
 	<atom:link href="http://gsoc2018.sebastinsanty.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 3: Implement DataOneV2 Abstraction</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/week3/</link>
+      <pubDate>Sun, 03 Jun 2018 01:18:33 +0530</pubDate>
+      
+      <guid>http://gsoc2018.sebastinsanty.com/posts/week3/</guid>
+      <description>Hi everyone!
+The third week has come to an end. It was a roller coaster week with failing tests and attempts to fix them. Anyways, one of the major work in the project, that is integrating DataOneV2 abstraction was completed. This is the summary of what I have done over the previous week:
+Work PR #21: Implemented 2 APIs, TERN(Terrestrial Ecosystem Research Network, Australia) (which features TERN()) and KNB(Knowledge Network for Biocomplexity) (which features ArcticDataCenter() and KnowledgeNetworkforBiocomplexity()) as a part of DataOneV2 API.</description>
+    </item>
     
     <item>
       <title>Week 2: Work on the REST API interface using DataOne</title>

@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Posts</title>
-  <meta property="og:title" content="Posts" />
-  <meta name="twitter:title" content="Posts" />
+  <title>Week 3: Implement DataOneV2 Abstraction</title>
+  <meta property="og:title" content="Week 3: Implement DataOneV2 Abstraction" />
+  <meta name="twitter:title" content="Week 3: Implement DataOneV2 Abstraction" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Sebastin Santy: GSoC Blog [julia]" />
-  <meta property="og:url" content="http://gsoc2018.sebastinsanty.com/posts/" />
+  <meta property="og:url" content="http://gsoc2018.sebastinsanty.com/posts/week3/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -21,7 +21,8 @@
   
 
   
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
+  
   
   
   <meta name="generator" content="Hugo 0.40.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
@@ -38,116 +39,63 @@
     
 
     
-    <h1 class="c-title p-title"><a href="http://gsoc2018.sebastinsanty.com/" class="p-title__link">Sebastin Santy: GSoC Blog [julia]</a></h1>
+    <p class="c-title p-title"><a href="http://gsoc2018.sebastinsanty.com/" class="p-title__link">Sebastin Santy: GSoC Blog [julia]</a></p>
     
     
   </header>
   <main id="main" class="l-main">
 
-<h2 class="c-title p-tag-title">Posts</h2>
 
-
-<article class="c-article p-list-article">
+<article class="p-article">
   <header>
-    <h2 class="c-title c-article__title"><a href="http://gsoc2018.sebastinsanty.com/posts/week3/">Week 3: Implement DataOneV2 Abstraction</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2018-06-03T01:18:33&#43;05:30">
-        Jun 3, 2018
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Hi everyone!
-The third week has come to an end. It was a roller coaster week with failing tests and attempts to fix them. Anyways, one of the major work in the project, that is integrating DataOneV2 abstraction was completed. This is the summary of what I have done over the previous week:
-Work PR #21: Implemented 2 APIs, TERN(Terrestrial Ecosystem Research Network, Australia) (which features TERN()) and KNB(Knowledge Network for Biocomplexity) (which features ArcticDataCenter() and KnowledgeNetworkforBiocomplexity()) as a part of DataOneV2 API.
-  </div>
-  
-  <a href="http://gsoc2018.sebastinsanty.com/posts/week3/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="http://gsoc2018.sebastinsanty.com/posts/week2/">Week 2: Work on the REST API interface using DataOne</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2018-05-27T01:18:33&#43;05:30">
-        May 27, 2018
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Hi everyone!
-The second week has come to an end. This is the summary of what I have done over the previous week:
-Work PR #18: Provision to add checksum in Register Blocks. Till now checksums didn&rsquo;t have a separate block of space in the Register Block structure. A new function was created to handle the case of checksums along with the tests. Overall, this PR helped me a lot in learning Julia, thanks to the lengthy review it went through.
-  </div>
-  
-  <a href="http://gsoc2018.sebastinsanty.com/posts/week2/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="http://gsoc2018.sebastinsanty.com/posts/week1/">Week 1: Making DataDepsGenerators.jl ready</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2018-05-24T03:56:04&#43;05:30">
-        May 24, 2018
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Hi everyone!
-The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
-Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators.
-  </div>
-  
-  <a href="http://gsoc2018.sebastinsanty.com/posts/week1/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-
-
-<article class="c-article p-list-article">
-  <header>
-    <h2 class="c-title c-article__title"><a href="http://gsoc2018.sebastinsanty.com/posts/gsoc-intro/">Accepted to GSoC 2018</a></h2>
-    <p class="c-article__meta">
-      Posted on
-      <time datetime="2018-05-21T02:15:59&#43;05:30">
-        May 21, 2018
-      </time>
-    </p>
-  </header>
-  <div class="c-article__summary">
-    Hi everyone!
-I am Sebastin Santy, a third year undergrad at BITS Pilani K.K. Birla Goa Campus. My proposal for GSoC 2018 has been accepted under NumFOCUS [Julia Computing]. I&rsquo;ll be working on adding support for more data repositories to DataDepsGenerators.jl. DataDepsGenerators.jl is a support package for DataDeps.jl which helps in creating Register Blocks for DataDeps.jl. A Register Block is a chunk of julia code which describes the data to be downloaded.
-  </div>
-  
-  <a href="http://gsoc2018.sebastinsanty.com/posts/gsoc-intro/" class="c-article__btn p-list-article__btn">Read more</a></li>
-  
-</article>
-
-
-<nav class="c-pagination p-pagination">
-  <div class="c-pagination__ctrl">
-    <div class="c-pagination__newer">
+    <h1>Week 3: Implement DataOneV2 Abstraction</h1>
+    <div>
+      <div class="c-time">
+        Posted on
+        <time datetime="2018-06-03T01:18:33&#43;05:30">
+          Jun 3, 2018
+        </time>
+      </div>
       
     </div>
-    <div class="c-pagination__older">
-      
-    </div>
-  </div>
-  <span class="c-pagination__count p-pagination__count">Page 1 of 1</span>
-</nav>
+  </header>
+  
+  <section id="js-article" class="p-article__body">
+    
 
+<p>Hi everyone!</p>
+
+<p>The third week has come to an end. It was a roller coaster week with failing tests and attempts to fix them. Anyways, one of the major work in the project, that is integrating DataOneV2 abstraction was completed. This is the summary of what I have done over the previous week:</p>
+
+<h2 id="work">Work</h2>
+
+<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/21">PR #21</a>: Implemented 2 APIs, TERN(Terrestrial Ecosystem Research Network, Australia) (which features <code>TERN()</code>) and KNB(Knowledge Network for Biocomplexity) (which features <code>ArcticDataCenter()</code> and <code>KnowledgeNetworkforBiocomplexity()</code>) as a part of DataOneV2 API. This gave us a proper knowledge of how to go about the abstractions. This PR has helped in providing a basic structure which will be substantial for subsequent API implementation. We also started segregating the related files into a folder in order avoid confusion.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We are a little behind according to the set project schedule in which we were planning to cover CKAN APIs also this week. This was due to multiple test failures and attempts at fixing them. Anyways, I feel multiple iterations have made the logic and abstractions strong which will help us in future. Also, it was noticed in between that DataDeps.jl has changed the structure of the input(Register Block) it needs, which needs to be accounted for (as a PR) this week. I also wrote a talk proposal for ODSC India Conference regarding this project, let’s see if it gets accepted.</p>
+
+  </section>
+  <footer>
+    
+    <nav class="p-pagination c-pagination">
+      <div class="c-pagination__ctrl">
+        <div class="c-pagination__newer">
+          
+          
+        </div>
+        <div class="c-pagination__older">
+          
+          <a href="http://gsoc2018.sebastinsanty.com/posts/week2/">Older</a>
+          
+        </div>
+      </div>
+    </nav>
+    
+
+
+  </footer>
+</article>
   </main>
   <footer class="l-footer">
     
