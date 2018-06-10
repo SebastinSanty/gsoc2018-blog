@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Jun 2018 01:18:33 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jun 2018 01:18:33 +0530</lastBuildDate>
     
 	<atom:link href="http://gsoc2018.sebastinsanty.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 4: Implement CKAN API and change RegBlock structure</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/week4/</link>
+      <pubDate>Sun, 10 Jun 2018 01:18:33 +0530</pubDate>
+      
+      <guid>http://gsoc2018.sebastinsanty.com/posts/week4/</guid>
+      <description>Hi everyone!
+The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.
+Work PR #26: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&amp;rsquo;t need a constructor for each and every dataset separately.</description>
+    </item>
     
     <item>
       <title>Week 3: Implement DataOneV2 Abstraction</title>
