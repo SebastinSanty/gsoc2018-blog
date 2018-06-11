@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Sebastin Santy: GSoC Blog [julia]</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 Jun 2018 01:18:33 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jun 2018 01:18:33 +0530</lastBuildDate>
     
 	<atom:link href="http://gsoc2018.sebastinsanty.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DataDepsGenerators.jl: Access to over a Million datasets in Julia</title>
+      <link>http://gsoc2018.sebastinsanty.com/posts/phase1/</link>
+      <pubDate>Mon, 11 Jun 2018 01:18:33 +0530</pubDate>
+      
+      <guid>http://gsoc2018.sebastinsanty.com/posts/phase1/</guid>
+      <description>Introduction I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it.</description>
+    </item>
     
     <item>
       <title>Week 4: Implement CKAN API and change RegBlock structure</title>

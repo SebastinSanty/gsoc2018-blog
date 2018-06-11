@@ -4,27 +4,32 @@
     <meta name="generator" content="Hugo 0.40.3" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags | Sebastin Santy: GSoC Blog [julia]</title>
-    <meta name="description" content="">
+    <title>Week 4: Implement CKAN API and change RegBlock structure | Sebastin Santy: GSoC Blog [julia]</title>
+    <meta name="description" content="Hi everyone!
+The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.
+Work PR #26: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately.">
     <meta name="keywords" content="">
     
     
     
-    
-      <meta name="robots" content="noindex">
     
     
 
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/tags/" />
+    <meta property="og:title" content="Week 4: Implement CKAN API and change RegBlock structure" />
+<meta property="og:description" content="Hi everyone!
+The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.
+Work PR #26: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/post/week4/" />
 
 
 
+<meta property="article:published_time" content="2018-06-10T01:18:33&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-06-10T01:18:33&#43;05:30"/>
 
 
 
@@ -39,14 +44,16 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://source.unsplash.com/category/technology/2000x1322"/>
 
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Week 4: Implement CKAN API and change RegBlock structure"/>
+<meta name="twitter:description" content="Hi everyone!
+The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.
+Work PR #26: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately."/>
 
     
 
+
+
   <meta property="og:image" content="https://source.unsplash.com/category/technology/2000x1322">
-
-
 
 
     <meta name="theme-color" content="#000">
@@ -58,9 +65,7 @@
 
     
     
-      <link href="http://gsoc2018.sebastinsanty.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Sebastin Santy: GSoC Blog [julia]">
-    
-    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/tags/">
+    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/post/week4/">
     
     
     <link rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23000'/%3E%3C/svg%3E">
@@ -220,12 +225,85 @@ article header img {
 
 </header>
     <main>
-  <header>
-    <h1>Tags</h1>
-  </header>
-  <ul>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     
-  </ul>
+<meta itemprop="name" content="Week 4: Implement CKAN API and change RegBlock structure">
+<meta itemprop="description" content="Hi everyone!
+The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.
+Work PR #26: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately.">
+
+
+<meta itemprop="datePublished" content="2018-06-10T01:18:33&#43;05:30" />
+<meta itemprop="dateModified" content="2018-06-10T01:18:33&#43;05:30" />
+<meta itemprop="wordCount" content="194">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    <header>
+      <h1 itemprop="headline">Week 4: Implement CKAN API and change RegBlock structure</h1>
+      <p class="muted">
+        <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>1 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-06-10T01:18:33&#43;05:30">10 Jun, 2018</time>
+
+
+      </p>
+      
+      
+    </header>
+    
+
+    <div itemprop="articleBody">
+      
+
+<p>Hi everyone!</p>
+
+<p>The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.</p>
+
+<h2 id="work">Work</h2>
+
+<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/26">PR #26</a>: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately.</p>
+
+<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/25">PR #25</a>: DataDeps.jl had changed the structure of its Register Blocks, which led to warnings being displayed for integration tests. Hence, there was a need to change the structure of generated register blocks which was done by this PR.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We are back on the schedule which was decided on the proposal. The first phase is over and evaluations are starting next week. At present, I am writing a long block post about all the features that have been integrated as a part of GSoC work. I&rsquo;ll start working on the Phase2 work next week.</p>
+
+    </div>
+    
+    <footer>
+      <hr>
+      <p>
+  Published
+  
+    
+      by <span itemprop="author"></span>
+    
+  
+  <time itemprop="datePublished" datetime="2018-06-10T01:18:33&#43;05:30">
+    10 Jun, 2018
+  </time>
+  
+  
+  using <span itemprop="wordCount">194</span> words.
+</p>
+
+      
+
+
+
+    </footer>
+  </article>
 </main>
     <footer>
   

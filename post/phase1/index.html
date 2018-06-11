@@ -4,27 +4,28 @@
     <meta name="generator" content="Hugo 0.40.3" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags | Sebastin Santy: GSoC Blog [julia]</title>
-    <meta name="description" content="">
+    <title>DataDepsGenerators.jl: Access to over a Million datasets in Julia | Sebastin Santy: GSoC Blog [julia]</title>
+    <meta name="description" content="Introduction I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it.">
     <meta name="keywords" content="">
     
     
     
-    
-      <meta name="robots" content="noindex">
     
     
 
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/tags/" />
+    <meta property="og:title" content="DataDepsGenerators.jl: Access to over a Million datasets in Julia" />
+<meta property="og:description" content="Introduction I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/post/phase1/" />
 
 
 
+<meta property="article:published_time" content="2018-06-11T01:18:33&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-06-11T01:18:33&#43;05:30"/>
 
 
 
@@ -39,14 +40,14 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://source.unsplash.com/category/technology/2000x1322"/>
 
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="DataDepsGenerators.jl: Access to over a Million datasets in Julia"/>
+<meta name="twitter:description" content="Introduction I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it."/>
 
     
 
+
+
   <meta property="og:image" content="https://source.unsplash.com/category/technology/2000x1322">
-
-
 
 
     <meta name="theme-color" content="#000">
@@ -58,9 +59,7 @@
 
     
     
-      <link href="http://gsoc2018.sebastinsanty.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Sebastin Santy: GSoC Blog [julia]">
-    
-    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/tags/">
+    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/post/phase1/">
     
     
     <link rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23000'/%3E%3C/svg%3E">
@@ -220,12 +219,131 @@ article header img {
 
 </header>
     <main>
-  <header>
-    <h1>Tags</h1>
-  </header>
-  <ul>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     
-  </ul>
+<meta itemprop="name" content="DataDepsGenerators.jl: Access to over a Million datasets in Julia">
+<meta itemprop="description" content="Introduction I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it.">
+
+
+<meta itemprop="datePublished" content="2018-06-11T01:18:33&#43;05:30" />
+<meta itemprop="dateModified" content="2018-06-11T01:18:33&#43;05:30" />
+<meta itemprop="wordCount" content="609">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    <header>
+      <h1 itemprop="headline">DataDepsGenerators.jl: Access to over a Million datasets in Julia</h1>
+      <p class="muted">
+        <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>3 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-06-11T01:18:33&#43;05:30">11 Jun, 2018</time>
+
+
+      </p>
+      
+      
+    </header>
+    
+
+    <div itemprop="articleBody">
+      
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it. In short DataDepsGenerators.jl is responsible to bring access to millions of dataset at your fingertips. DataDeps.jl is responsible to use this information for downloading and integrating the datasets with the julia code. Together they help in <code>Repeatable Data Setup for Repeatable Science</code>.</p>
+
+<h2 id="description">Description</h2>
+
+<p>The following list of APIs are extensively covered. It gives a description of the coverage and usage of the datasets and how important they are. If you wish to see only the functionality, click here.</p>
+
+<ul>
+<li><p>GitHub [<code>GitHub()</code>]: GitHub a VCS is alternatively used for hosting datasets by some organisations like fivethirtyeight and BuzzFeed. GitHub as a common constructor provides access to millions such datasets.</p></li>
+
+<li><p>UCI ML [<code>UCI()</code>]: UC Irvine Machine Learning Repository is a collection of databases, domain theories, and data generators that are used by the machine learning community for the empirical analysis of machine learning algorithms. It is widely regarded as a standard set of datasets and provides <code>437</code> datasets.</p></li>
+
+<li><p>Data One API: Dataone API is served in two versions (1 &amp; 2) which are almost similar except some structural changes. This package provides support for both the versions. Overall, it provides a coverage for <code>~800k</code> datasets.</p>
+
+<ul>
+<li><p>Version 1: [<code>DataOneV1()</code>] : This API covers the version 1 of DataOne API in general. At present, only DataDryad uses this API, hence the functions are largely based on this. Dryad is an international repository of data underlying peer-reviewed scientific and medical literature. It covers <code>~200k</code> datasets.</p></li>
+
+<li><p>Version 2</p>
+
+<ul>
+<li><p>TERN [<code>TERN()</code>]: Terrestrial Ecosystem Research Network (TERN) is Australia’s land ecosystem observatory. TERN observes and measures the cause and effect of ecosystem change-from site to continental scale-and delivers data streams that enable environmental research and management. It covers <code>~11k</code> datasets.</p></li>
+
+<li><p>KNB:
+This is covered by <code>KnowledgeNetworkforBiocomplexity()</code> and <code>ArcticDataCenter()</code>. Arctic Data Center operates as the primary repository supporting the NSF Arctic community for data preservation and access.  Knowledge Network for Biocomplexity (KNB) is a national network intended to facilitate ecological and environmental research on biocomplexity. Together they cover <code>~10k</code> datasets.</p></li>
+</ul></li>
+</ul></li>
+
+<li><p>CKAN API [<code>CKAN()</code>]: The Comprehensive Knowledge Archive Network (CKAN) is a web-based open source management system for the storage and distribution of open data especially government released data. This helped in covering sites like data.gov, data.gov.au, data.gov.uk etc. Having a uniform API structure helped in having a single constructor for the whole CKAN API. Collectively this covers around <code>~300k</code> datasets.</p></li>
+</ul>
+
+<h2 id="an-end-to-end-example">An end-to-end example</h2>
+
+<p>Lets try to work with the Gold Prices dataset which is available with the Demo Site of CKAN using <code>CKAN()</code>.</p>
+
+<ul>
+<li><p>Generating the Register Block for use by DataDeps:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> DataDepsGenerators
+register_block <span style="color:#f92672">=</span> generate(CKAN(), <span style="color:#e6db74">&#34;https://demo.ckan.org/dataset/gold-prices&#34;</span>, <span style="color:#e6db74">&#34;Gold Prices&#34;</span>);</code></pre></div></li>
+
+<li><p>Loading this data using DataDeps:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> DataDeps
+eval(parse(register_block))
+data <span style="color:#f92672">=</span> datadep<span style="color:#e6db74">&#34;Gold Prices/data.csv&#34;</span></code></pre></div></li>
+
+<li><p>Making it into a dataframe for further analysis:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> DataFrames, FileIO, CSVFiles
+df <span style="color:#f92672">=</span> DataFrame(load(data; escapechar<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#34;&#39;</span>));</code></pre></div></li>
+
+<li><p>Making a simple plot (date vs price):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-julia" data-lang="julia"><span style="color:#66d9ef">using</span> Plots
+plot(df[<span style="color:#f92672">:</span>date], df[<span style="color:#f92672">:</span>price], label<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Gold Prices&#34;</span>, legend<span style="color:#f92672">=:</span>topleft)</code></pre></div></li>
+</ul>
+
+<p>Following these steps produces this nice plot:</p>
+
+<p><img src="/static/GoldPrices.png" alt="Image" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Work till now has been exciting. We have been able to provide access to over a million datasets and &gt;50TB of data using DataDepsGenerators.jl. Future endeavours will bring support for many other data repositories (like CKAN, OAI-PMH, DataCite DOIs, Dataverse) eventually placing almost all of the open research data of the world at your fingertips.</p>
+
+    </div>
+    
+    <footer>
+      <hr>
+      <p>
+  Published
+  
+    
+      by <span itemprop="author"></span>
+    
+  
+  <time itemprop="datePublished" datetime="2018-06-11T01:18:33&#43;05:30">
+    11 Jun, 2018
+  </time>
+  
+  
+  using <span itemprop="wordCount">609</span> words.
+</p>
+
+      
+
+
+
+    </footer>
+  </article>
 </main>
     <footer>
   

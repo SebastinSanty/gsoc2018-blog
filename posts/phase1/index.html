@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>Week 4: Implement CKAN API and change RegBlock structure</title>
-  <meta property="og:title" content="Week 4: Implement CKAN API and change RegBlock structure" />
-  <meta name="twitter:title" content="Week 4: Implement CKAN API and change RegBlock structure" />
+  <title>DataDepsGenerators.jl: Access to over a Million datasets in Julia</title>
+  <meta property="og:title" content="DataDepsGenerators.jl: Access to over a Million datasets in Julia" />
+  <meta name="twitter:title" content="DataDepsGenerators.jl: Access to over a Million datasets in Julia" />
   
 
   
 
   <meta name="author" content=""/>
   <meta property="og:site_name" content="Sebastin Santy: GSoC Blog [julia]" />
-  <meta property="og:url" content="http://gsoc2018.sebastinsanty.com/posts/week4/" />
+  <meta property="og:url" content="http://gsoc2018.sebastinsanty.com/posts/phase1/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -48,12 +48,12 @@
 
 <article class="p-article">
   <header>
-    <h1>Week 4: Implement CKAN API and change RegBlock structure</h1>
+    <h1>DataDepsGenerators.jl: Access to over a Million datasets in Julia</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2018-06-10T01:18:33&#43;05:30">
-          Jun 10, 2018
+        <time datetime="2018-06-11T01:18:33&#43;05:30">
+          Jun 11, 2018
         </time>
       </div>
       
@@ -63,19 +63,70 @@
   <section id="js-article" class="p-article__body">
     
 
-<p>Hi everyone!</p>
+<h2 id="introduction">Introduction</h2>
 
-<p>The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.</p>
+<p>I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it. In short DataDepsGenerators.jl is responsible to bring access to millions of dataset at your fingertips. DataDeps.jl is responsible to use this information for downloading and integrating the datasets with the julia code. Together they help in <code>Repeatable Data Setup for Repeatable Science</code>.</p>
 
-<h2 id="work">Work</h2>
+<h2 id="description">Description</h2>
 
-<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/26">PR #26</a>: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately.</p>
+<p>The following list of APIs are extensively covered. It gives a description of the coverage and usage of the datasets and how important they are. If you wish to see only the functionality, click here.</p>
 
-<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/25">PR #25</a>: DataDeps.jl had changed the structure of its Register Blocks, which led to warnings being displayed for integration tests. Hence, there was a need to change the structure of generated register blocks which was done by this PR.</p>
+<ul>
+<li><p>GitHub [<code>GitHub()</code>]: GitHub a VCS is alternatively used for hosting datasets by some organisations like fivethirtyeight and BuzzFeed. GitHub as a common constructor provides access to millions such datasets.</p></li>
 
-<h2 id="conclusion">Conclusion</h2>
+<li><p>UCI ML [<code>UCI()</code>]: UC Irvine Machine Learning Repository is a collection of databases, domain theories, and data generators that are used by the machine learning community for the empirical analysis of machine learning algorithms. It is widely regarded as a standard set of datasets and provides <code>437</code> datasets.</p></li>
 
-<p>We are back on the schedule which was decided on the proposal. The first phase is over and evaluations are starting next week. At present, I am writing a long block post about all the features that have been integrated as a part of GSoC work. I&rsquo;ll start working on the Phase2 work next week.</p>
+<li><p>Data One API: Dataone API is served in two versions (1 &amp; 2) which are almost similar except some structural changes. This package provides support for both the versions. Overall, it provides a coverage for <code>~800k</code> datasets.</p>
+
+<ul>
+<li><p>Version 1: [<code>DataOneV1()</code>] : This API covers the version 1 of DataOne API in general. At present, only DataDryad uses this API, hence the functions are largely based on this. Dryad is an international repository of data underlying peer-reviewed scientific and medical literature. It covers <code>~200k</code> datasets.</p></li>
+
+<li><p>Version 2</p>
+
+<ul>
+<li><p>TERN [<code>TERN()</code>]: Terrestrial Ecosystem Research Network (TERN) is Australia’s land ecosystem observatory. TERN observes and measures the cause and effect of ecosystem change-from site to continental scale-and delivers data streams that enable environmental research and management. It covers <code>~11k</code> datasets.</p></li>
+
+<li><p>KNB:
+This is covered by <code>KnowledgeNetworkforBiocomplexity()</code> and <code>ArcticDataCenter()</code>. Arctic Data Center operates as the primary repository supporting the NSF Arctic community for data preservation and access.  Knowledge Network for Biocomplexity (KNB) is a national network intended to facilitate ecological and environmental research on biocomplexity. Together they cover <code>~10k</code> datasets.</p></li>
+</ul></li>
+</ul></li>
+
+<li><p>CKAN API [<code>CKAN()</code>]: The Comprehensive Knowledge Archive Network (CKAN) is a web-based open source management system for the storage and distribution of open data especially government released data. This helped in covering sites like data.gov, data.gov.au, data.gov.uk etc. Having a uniform API structure helped in having a single constructor for the whole CKAN API. Collectively this covers around <code>~300k</code> datasets.</p></li>
+</ul>
+
+<h2 id="an-end-to-end-example">An end-to-end example</h2>
+
+<p>Lets try to work with the Gold Prices dataset which is available with the Demo Site of CKAN using <code>CKAN()</code>.</p>
+
+<ul>
+<li><p>Generating the Register Block for use by DataDeps:</p>
+
+<pre><code class="language-julia">using DataDepsGenerators
+register_block = generate(CKAN(), &quot;https://demo.ckan.org/dataset/gold-prices&quot;, &quot;Gold Prices&quot;);
+</code></pre></li>
+
+<li><p>Loading this data using DataDeps:</p>
+
+<pre><code class="language-julia">using DataDeps
+eval(parse(register_block))
+data = datadep&quot;Gold Prices/data.csv&quot;
+</code></pre></li>
+
+<li><p>Making it into a dataframe for further analysis:</p>
+
+<pre><code class="language-julia">using DataFrames, FileIO, CSVFiles
+df = DataFrame(load(data; escapechar='&quot;'));
+</code></pre></li>
+
+<li><p>Making a simple plot (date vs price):</p>
+
+<pre><code class="language-julia">using Plots
+plot(df[:date], df[:price], label=&quot;Gold Prices&quot;, legend=:topleft)
+</code></pre>
+
+<p>Following these steps produce this nice plot:
+<img src="/static/GoldPrices.png" alt="Image" /></p></li>
+</ul>
 
   </section>
   <footer>
@@ -84,12 +135,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="http://gsoc2018.sebastinsanty.com/posts/phase1/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="http://gsoc2018.sebastinsanty.com/posts/week3/">Older</a>
+          <a href="http://gsoc2018.sebastinsanty.com/posts/week4/">Older</a>
           
         </div>
       </div>

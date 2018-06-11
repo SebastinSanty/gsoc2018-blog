@@ -4,27 +4,32 @@
     <meta name="generator" content="Hugo 0.40.3" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags | Sebastin Santy: GSoC Blog [julia]</title>
-    <meta name="description" content="">
+    <title>Week 1: Making DataDepsGenerators.jl ready | Sebastin Santy: GSoC Blog [julia]</title>
+    <meta name="description" content="Hi everyone!
+The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
+Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators.">
     <meta name="keywords" content="">
     
     
     
-    
-      <meta name="robots" content="noindex">
     
     
 
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/tags/" />
+    <meta property="og:title" content="Week 1: Making DataDepsGenerators.jl ready" />
+<meta property="og:description" content="Hi everyone!
+The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
+Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/post/week1/" />
 
 
 
+<meta property="article:published_time" content="2018-05-24T03:56:04&#43;05:30"/>
+
+<meta property="article:modified_time" content="2018-05-24T03:56:04&#43;05:30"/>
 
 
 
@@ -39,14 +44,16 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://source.unsplash.com/category/technology/2000x1322"/>
 
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Week 1: Making DataDepsGenerators.jl ready"/>
+<meta name="twitter:description" content="Hi everyone!
+The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
+Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators."/>
 
     
 
+
+
   <meta property="og:image" content="https://source.unsplash.com/category/technology/2000x1322">
-
-
 
 
     <meta name="theme-color" content="#000">
@@ -58,9 +65,7 @@
 
     
     
-      <link href="http://gsoc2018.sebastinsanty.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Sebastin Santy: GSoC Blog [julia]">
-    
-    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/tags/">
+    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/post/week1/">
     
     
     <link rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23000'/%3E%3C/svg%3E">
@@ -220,12 +225,87 @@ article header img {
 
 </header>
     <main>
-  <header>
-    <h1>Tags</h1>
-  </header>
-  <ul>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     
-  </ul>
+<meta itemprop="name" content="Week 1: Making DataDepsGenerators.jl ready">
+<meta itemprop="description" content="Hi everyone!
+The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
+Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators.">
+
+
+<meta itemprop="datePublished" content="2018-05-24T03:56:04&#43;05:30" />
+<meta itemprop="dateModified" content="2018-05-24T03:56:04&#43;05:30" />
+<meta itemprop="wordCount" content="224">
+
+
+
+<meta itemprop="keywords" content="" />
+
+    <header>
+      <h1 itemprop="headline">Week 1: Making DataDepsGenerators.jl ready</h1>
+      <p class="muted">
+        <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>2 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-05-24T03:56:04&#43;05:30">24 May, 2018</time>
+
+
+      </p>
+      
+      
+    </header>
+    
+
+    <div itemprop="articleBody">
+      
+
+<p>Hi everyone!</p>
+
+<p>The first week has come to an end. Including the previous work, this is the summary of what I have done till now:</p>
+
+<h2 id="work">Work</h2>
+
+<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/17">PR #17</a>: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators.jl without which the whole point of Register Block generation is useless.</p>
+
+<p><a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/15">PR #15</a>: Github changed their front-end code structure owing to which existing <code>GitHub()</code> code in DataDepsGenerators.jl was not able to retrieve the commits. This pull request fixed it. It was a bit tricky as GitHub now uses front-end rendering techniques because of which what appears is not what the source code is.</p>
+
+<p><a href="#">Others</a> Worked on getting the CI tests green: <a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/15">PR #13</a>, <a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/14">PR #14</a>, <a href="https://github.com/oxinabox/DataDepsGenerators.jl/pull/16">PR #16</a></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>These PRs are helping us to get near to the meat of the project which is adding repository support to DataDepsGenerators.jl. The work has been a bit erratic as my exams had just got over the day GSoC began. Shifting from a 30&deg;C to a 45&deg;C (university to home) region made things more worse. Though I feel, we are on schedule with the timeline on my proposal.</p>
+
+    </div>
+    
+    <footer>
+      <hr>
+      <p>
+  Published
+  
+    
+      by <span itemprop="author"></span>
+    
+  
+  <time itemprop="datePublished" datetime="2018-05-24T03:56:04&#43;05:30">
+    24 May, 2018
+  </time>
+  
+  
+  using <span itemprop="wordCount">224</span> words.
+</p>
+
+      
+
+
+
+    </footer>
+  </article>
 </main>
     <footer>
   

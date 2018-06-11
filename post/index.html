@@ -4,7 +4,7 @@
     <meta name="generator" content="Hugo 0.40.3" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags | Sebastin Santy: GSoC Blog [julia]</title>
+    <title>Posts | Sebastin Santy: GSoC Blog [julia]</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     
@@ -18,14 +18,14 @@
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="Tags" />
+    <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/tags/" />
+<meta property="og:url" content="http://gsoc2018.sebastinsanty.com/post/" />
 
 
 
-
+<meta property="og:updated_time" content="2018-06-11T01:18:33&#43;05:30"/>
 
 
 
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://source.unsplash.com/category/technology/2000x1322"/>
 
-<meta name="twitter:title" content="Tags"/>
+<meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
 
     
@@ -58,9 +58,9 @@
 
     
     
-      <link href="http://gsoc2018.sebastinsanty.com/tags/index.xml" rel="alternate" type="application/rss+xml" title="Sebastin Santy: GSoC Blog [julia]">
+      <link href="http://gsoc2018.sebastinsanty.com/post/index.xml" rel="alternate" type="application/rss+xml" title="Sebastin Santy: GSoC Blog [julia]">
     
-    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/tags/">
+    <link rel="canonical" href="http://gsoc2018.sebastinsanty.com/post/">
     
     
     <link rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23000'/%3E%3C/svg%3E">
@@ -221,13 +221,232 @@ article header img {
 </header>
     <main>
   <header>
-    <h1>Tags</h1>
+    <h1>Posts</h1>
   </header>
-  <ul>
+  
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="name">
+      <a href="/post/phase1/">DataDepsGenerators.jl: Access to over a Million datasets in Julia</a>
+    </h2>
     
-  </ul>
+      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>3 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-06-11T01:18:33&#43;05:30">11 Jun, 2018</time>
+
+</p>
+    
+  </header>
+  
+  <div itemprop="description">
+    Introduction I am Sebastin, a Google Summer of Code student working on DataDepsGenerators.jl a support package for DataDeps.jl. DataDeps.jl is a tool for reproducible data science. It means anyone trying to run your code later, in a different environment isn’t faffing around trying to work out where to download the data from and how to connect it to your scripts. DataDepsGenerators.jl helps DataDeps.jl by creating the register blocks which are needed as input to it.
+  </div>
+  
+    <nav class="readmore"><a itemprop="url" href="/post/phase1/">Read More&nbsp;&raquo;</a></nav>
+  
+  <meta itemprop="inLanguage" content="en-us">
+  <meta itemprop="datePublished" content="2018-06-11T01:18:33&#43;05:30">
+  <meta itemprop="dateModified" content="2018-06-11T01:18:33&#43;05:30">
+  
+</article>
+
+  
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="name">
+      <a href="/post/week4/">Week 4: Implement CKAN API and change RegBlock structure</a>
+    </h2>
+    
+      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>1 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-06-10T01:18:33&#43;05:30">10 Jun, 2018</time>
+
+</p>
+    
+  </header>
+  
+  <div itemprop="description">
+    Hi everyone!
+The fourth week has come to an end. This week was smooth considering the previous experiences I had handling the issues.
+Work PR #26: Implemented CKAN API setup. CKAN is used by a lot of government data providing agencies like data.gov, data.gov.au. Hence, adding CKAN brings us atleast over 1 million datasets (800,000 from DataOne, 281,000 from Data.Gov, 28,000 from Data.Gov.au). CKAN was the most successful API we integrated till today, as the API structure was uniform across multiple data sources which is a boon as we didn&rsquo;t need a constructor for each and every dataset separately.
+  </div>
+  
+    <nav class="readmore"><a itemprop="url" href="/post/week4/">Read More&nbsp;&raquo;</a></nav>
+  
+  <meta itemprop="inLanguage" content="en-us">
+  <meta itemprop="datePublished" content="2018-06-10T01:18:33&#43;05:30">
+  <meta itemprop="dateModified" content="2018-06-10T01:18:33&#43;05:30">
+  
+</article>
+
+  
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="name">
+      <a href="/post/week3/">Week 3: Implement DataOneV2 Abstraction</a>
+    </h2>
+    
+      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>2 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-06-03T01:18:33&#43;05:30">3 Jun, 2018</time>
+
+</p>
+    
+  </header>
+  
+  <div itemprop="description">
+    Hi everyone!
+The third week has come to an end. It was a roller coaster week with failing tests and attempts to fix them. Anyways, one of the major work in the project, that is integrating DataOneV2 abstraction was completed. This is the summary of what I have done over the previous week:
+Work PR #21: Implemented 2 APIs, TERN(Terrestrial Ecosystem Research Network, Australia) (which features TERN()) and KNB(Knowledge Network for Biocomplexity) (which features ArcticDataCenter() and KnowledgeNetworkforBiocomplexity()) as a part of DataOneV2 API.
+  </div>
+  
+    <nav class="readmore"><a itemprop="url" href="/post/week3/">Read More&nbsp;&raquo;</a></nav>
+  
+  <meta itemprop="inLanguage" content="en-us">
+  <meta itemprop="datePublished" content="2018-06-03T01:18:33&#43;05:30">
+  <meta itemprop="dateModified" content="2018-06-03T01:18:33&#43;05:30">
+  
+</article>
+
+  
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="name">
+      <a href="/post/week2/">Week 2: Work on the REST API interface using DataOne</a>
+    </h2>
+    
+      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>2 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-05-27T01:18:33&#43;05:30">27 May, 2018</time>
+
+</p>
+    
+  </header>
+  
+  <div itemprop="description">
+    Hi everyone!
+The second week has come to an end. This is the summary of what I have done over the previous week:
+Work PR #18: Provision to add checksum in Register Blocks. Till now checksums didn&rsquo;t have a separate block of space in the Register Block structure. A new function was created to handle the case of checksums along with the tests. Overall, this PR helped me a lot in learning Julia, thanks to the lengthy review it went through.
+  </div>
+  
+    <nav class="readmore"><a itemprop="url" href="/post/week2/">Read More&nbsp;&raquo;</a></nav>
+  
+  <meta itemprop="inLanguage" content="en-us">
+  <meta itemprop="datePublished" content="2018-05-27T01:18:33&#43;05:30">
+  <meta itemprop="dateModified" content="2018-05-27T01:18:33&#43;05:30">
+  
+</article>
+
+  
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="name">
+      <a href="/post/week1/">Week 1: Making DataDepsGenerators.jl ready</a>
+    </h2>
+    
+      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>2 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-05-24T03:56:04&#43;05:30">24 May, 2018</time>
+
+</p>
+    
+  </header>
+  
+  <div itemprop="description">
+    Hi everyone!
+The first week has come to an end. Including the previous work, this is the summary of what I have done till now:
+Work PR #17: Added DataDeps-based Integration tests. These were needed in order to check whether the Register Blocks we are generating using DataDepsGenerators.jl are in the format DataDeps.jl wants it to be. These tests were crucial as it gives a verification that DataDeps.jl is able to understand the generated Register Block output from DataDepsGenerators.
+  </div>
+  
+    <nav class="readmore"><a itemprop="url" href="/post/week1/">Read More&nbsp;&raquo;</a></nav>
+  
+  <meta itemprop="inLanguage" content="en-us">
+  <meta itemprop="datePublished" content="2018-05-24T03:56:04&#43;05:30">
+  <meta itemprop="dateModified" content="2018-05-24T03:56:04&#43;05:30">
+  
+</article>
+
+  
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="name">
+      <a href="/post/gsoc-intro/">Accepted to GSoC 2018</a>
+    </h2>
+    
+      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <circle cx="16" cy="16" r="14" />
+  <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>2 minute read</span>
+<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
+</svg>
+
+  Published: <time datetime="2018-05-21T02:15:59&#43;05:30">21 May, 2018</time>
+
+</p>
+    
+  </header>
+  
+  <div itemprop="description">
+    Hi everyone!
+I am Sebastin Santy, a third year undergrad at BITS Pilani K.K. Birla Goa Campus. My proposal for GSoC 2018 has been accepted under NumFOCUS [Julia Computing]. I&rsquo;ll be working on adding support for more data repositories to DataDepsGenerators.jl. DataDepsGenerators.jl is a support package for DataDeps.jl which helps in creating Register Blocks for DataDeps.jl. A Register Block is a chunk of julia code which describes the data to be downloaded.
+  </div>
+  
+    <nav class="readmore"><a itemprop="url" href="/post/gsoc-intro/">Read More&nbsp;&raquo;</a></nav>
+  
+  <meta itemprop="inLanguage" content="en-us">
+  <meta itemprop="datePublished" content="2018-05-21T02:15:59&#43;05:30">
+  <meta itemprop="dateModified" content="2018-05-21T02:15:59&#43;05:30">
+  
+</article>
+
+  
 </main>
     <footer>
+  <nav>
+  <p>
+    
+    <span>Page 1 of 1</span>
+    
+  </p>
+</nav>
+
   
   <p class="muted">
     This page was generated using
